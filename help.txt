@@ -1,0 +1,8 @@
+This is a command line PHP script with one option.
+
+Usage:
+	parse - start to parse site. You need to use it with required parameter "URL". 
+	        Example of URL parameter is  - "http://example.com", "https://example.com", "www.example.com".
+	report - show in console the result of analysis for domain. You need to use it with the required parameter "domain". 
+	         Example of domain parameter is - "http://example.com", "https://example.com", "www.example.com".
+	help - show the list with commands 

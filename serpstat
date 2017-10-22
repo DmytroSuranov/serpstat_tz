@@ -1,0 +1,11 @@
+#!/usr/bin/php
+<?php
+include_once 'classes/Command.php';
+
+require __DIR__ . '/vendor/autoload.php';
+
+if($argv[2] != null){
+	$command = new Command($argv[1], $argv[2]);
+}else{
+	$command = new Command($argv[1]);
+}
