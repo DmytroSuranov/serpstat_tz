@@ -2,11 +2,12 @@
 
 class Parser {
 	public $url;
-	public $host;
-	public $links = array();
-	public $parsed_links = array();
 	public $links_with_images = array();
-	public $cnt;
+	
+	private $host;
+	private $links = array();
+	private $parsed_links = array();
+	private $cnt;
 
 	public function __construct($url){
 		$this->url = $url;
@@ -60,7 +61,7 @@ class Parser {
 		}		
 	}
 	
-	protected function getLinks(DOMDocument $doc, $current_link){
+	private function getLinks(DOMDocument $doc, $current_link){
 		$links = $doc->getElementsByTagName('a');
 		$link_paths = array();
 		
@@ -94,7 +95,7 @@ class Parser {
 	}
 	
 	
-	protected function getImages(DOMDocument $doc){
+	private function getImages(DOMDocument $doc){
 		$images = $doc->getElementsByTagName('img');
 		$image_paths = array();
 		

@@ -1,0 +1,11 @@
+{
+    "name": "dmytro/serp",
+    "description": "Test task for Serpstat",
+    "authors": [
+        {
+            "name": "Dmitriy Suranov",
+            "email": "suranovdima@gmail.com"
+        }
+    ],
+    "require": {}
+}
